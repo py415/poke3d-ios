@@ -43,6 +43,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Run the view's session
         sceneView.session.run(configuration)
         
+        sceneView.autoenablesDefaultLighting = true
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -68,6 +70,14 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             
             planeNode.eulerAngles.x = -.pi / 2
             node.addChildNode(planeNode)
+            
+            if let pokeScene = SCNScene(named: "art.scnassets/XY_PikachuM.scn") {
+                if let pokeNode = pokeScene.rootNode.childNodes.first {
+                    pokeNode.eulerAngles.x = .pi
+                    
+                    planeNode.addChildNode(pokeNode)
+                }
+            }
         }
         
         return node
