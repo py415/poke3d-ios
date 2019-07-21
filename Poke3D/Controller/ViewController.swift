@@ -11,7 +11,7 @@ import SceneKit
 import ARKit
 
 class ViewController: UIViewController, ARSCNViewDelegate {
-
+    
     // Outlets
     @IBOutlet var sceneView: ARSCNView!
     
@@ -39,7 +39,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             
             print("Images Successfully Added")
         }
-
+        
         // Run the view's session
         sceneView.session.run(configuration)
         
@@ -55,7 +55,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         sceneView.session.pause()
         
     }
-
+    
     // MARK: - ARSCNViewDelegate
     
     func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
@@ -71,11 +71,15 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             planeNode.eulerAngles.x = -.pi / 2
             node.addChildNode(planeNode)
             
-            if let pokeScene = SCNScene(named: "art.scnassets/XY_PikachuM.scn") {
-                if let pokeNode = pokeScene.rootNode.childNodes.first {
-                    pokeNode.eulerAngles.x = .pi
-                    
-                    planeNode.addChildNode(pokeNode)
+            if let pokeCard = imageAnchor.referenceImage.name {
+                
+                print(pokeCard)
+                if let pokeScene = SCNScene(named: String("art.scnassets/" + pokeCard + ".scn")) {
+                    if let pokeNode = pokeScene.rootNode.childNodes.first {
+                        pokeNode.eulerAngles.x = .pi
+                        
+                        planeNode.addChildNode(pokeNode)
+                    }
                 }
             }
         }

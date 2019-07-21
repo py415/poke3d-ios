@@ -5,7 +5,10 @@
   },
   "resources" : [
     {
-      "filename" : "pikachu-card.arreferenceimage"
+      "filename" : "XY_Eevee.arreferenceimage"
+    },
+    {
+      "filename" : "XY_PikachuM.arreferenceimage"
     }
   ]
 }
