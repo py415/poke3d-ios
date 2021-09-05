@@ -20,7 +20,7 @@ Poke3D is an augmented reality app that renders 3D models of Pokémon cards.
 
 Here's a GIF of how the app works:
 
-<img src="https://github.com/py415/app-resources/blob/master/ios/ios-poke3d.gif" width=250>
+<img src="https://raw.githubusercontent.com/py415/app-resources/master/ios/ios-poke3d.gif" width="250" />
 
 ## Credits
 
