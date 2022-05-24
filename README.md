@@ -1,28 +1,28 @@
-# Poke3D
+# 📽 Poke3D
 
-## Table of Contents
+## 📋 Table of Contents
 1. [Overview](#Overview)
 2. [Product Specs](#Product-Specs)
 3. [App Walkthrough](#App-Walkthrough)
 4. [Credits](#Credits)
 
-## Overview
+## 👀 Overview
 ### Description
 
 Poke3D is an augmented reality app that renders 3D models of Pokémon cards.
 
-## Product Specs
+## 📕 Product Specs
 ### User Stories
 
 - [X] User shall be able to point camera to a Pokémon card and render a 3D model of the Pokémon.
 
-## App Walkthrough
+## 🎬 App Walkthrough
 
 Here's a GIF of how the app works:
 
-<img src="https://raw.githubusercontent.com/py415/app-resources/master/ios/ios-poke3d.gif" width="250" />
+<img src="https://raw.githubusercontent.com/py415/app-resources/master/GIFs/ios/ios-poke3d.gif" width="250" />
 
-## Credits
+## 💳 Credits
 
 >This is a companion project to The App Brewery's Complete App Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/).
 
